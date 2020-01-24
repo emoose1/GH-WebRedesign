@@ -10,5 +10,11 @@ section.whoWeAre, section.howWeDoIt {
   display: -ms-flexbox;
   display: flex;
   max-width: 1024px;
+  margin: auto;
+  width: 100%;
+}
+
+body {
+  background-color: white;
 }
 /*# sourceMappingURL=styles.css.map */
