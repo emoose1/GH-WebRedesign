@@ -9,12 +9,99 @@ section.whoWeAre, section.howWeDoIt {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 1024px;
   margin: auto;
   width: 100%;
+  padding-top: 2rem;
 }
 
 body {
   background-color: white;
+}
+
+section.howWeDoIt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+div.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1024px;
+  margin: auto;
+}
+
+div.box-1 {
+  padding-bottom: 3rem;
+}
+
+div.box-1 div.img {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+
+div.box-1 div.img img {
+  width: 50%;
+}
+
+div.box-1 div.info {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+div.box-1 div.info h1.head-txt {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+div.box-1 div.para {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+}
+
+div.box-1 div.para img {
+  width: 110%;
+}
+
+div.box-2 {
+  background-color: #F7F7F7;
+  width: 100vw;
+}
+
+div.box-2 div.para {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.box-2 img {
+  height: 5rem;
+  margin: auto;
 }
 /*# sourceMappingURL=styles.css.map */

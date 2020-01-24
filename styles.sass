@@ -1,3 +1,6 @@
+//Variables
+$gray: #F7F7F7
+
 //Base Styles
 *
     margin: 0
@@ -7,15 +10,57 @@
 
 section.whoWeAre, section.howWeDoIt
     display: flex
-    max-width: 1024px
+    
     margin: auto
     width: 100%
+    padding-top: 2rem
+
 
 body
     background-color: white
 
 
-
-
-//How Do It Mobile Styles
+//How Do It Mobile-First Styles
+section.howWeDoIt
+    display: flex
+    flex-direction: column
+    position: relative
     
+div.box
+    display: flex
+    max-width: 1024px
+    margin: auto
+div.box-1
+    padding-bottom: 3rem
+    div.img
+        flex-basis: 40%
+        img
+            width: 50%
+    div.info
+        flex-basis: 60%
+        display: flex
+        justify-content: flex-start
+        flex-direction: column
+        h1.head-txt
+            font-size: 1.7rem
+            font-weight: 700
+    div.para
+        display: flex
+        flex-direction: column
+        width: 90%
+        img
+            width: 110%
+
+div.box-2
+    background-color: $gray
+    width: 100vw
+    div.para
+        width: 100%
+        display: flex
+        justify-content: center
+    img
+        height: 5rem
+        margin: auto
+    
+           
+                
