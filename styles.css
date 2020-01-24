@@ -4,4 +4,11 @@
   font-size: 62.5%;
   font-family: 'Montserrat', sans-serif;
 }
+
+section.whoWeAre, section.howWeDoIt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1024px;
+}
 /*# sourceMappingURL=styles.css.map */
