@@ -11,7 +11,7 @@ section.whoWeAre, section.howWeDoIt {
   display: flex;
   margin: auto;
   width: 100%;
-  padding-top: 2rem;
+  padding-top: 1%;
 }
 
 body {
@@ -33,52 +33,58 @@ div.greenhouse-staff-pics {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  max-width: 1024px;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin: auto;
 }
 
+div.greenhouse-staff-pics div.staff-pics-row {
+  min-width: 45%;
+}
+
 div.greenhouse-staff-pics div.staff-pics-row img {
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
+  max-width: 34%;
 }
 
 div.box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 1024px;
+  max-width: 90%;
   margin: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 div.box-1 {
-  padding-bottom: 3rem;
+  padding: 7% 0;
 }
 
 div.box-1 div.title-img {
-  -ms-flex-preferred-size: 40%;
-      flex-basis: 40%;
+  min-width: 50%;
+  max-width: 60vw;
 }
 
 div.box-1 div.title-img img {
-  width: 50%;
+  min-width: 11vw;
+  max-width: 50%;
+  padding: 0 7vw;
 }
 
 div.box-1 div.info {
-  -ms-flex-preferred-size: 60%;
-      flex-basis: 60%;
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -86,9 +92,9 @@ div.box-1 div.info {
 }
 
 div.box-1 div.info h1.head-txt {
-  font-size: 6rem;
+  font-size: 4.5vw;
   font-weight: 700;
-  padding-bottom: 4rem;
+  padding-bottom: 5%;
 }
 
 div.box-1 div.para {
@@ -99,15 +105,17 @@ div.box-1 div.para {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 90%;
+  width: 85%;
+  min-width: 50%;
 }
 
 div.box-1 div.para p {
-  font-size: 1.75rem;
+  font-size: 1.35vw;
+  line-height: 1.5;
 }
 
 div.box-1 div.para p strong {
-  font-size: 1.75rem;
+  font-size: 1.35vw;
 }
 
 div.box-1 div.para img {
