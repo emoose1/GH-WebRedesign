@@ -1,55 +1,49 @@
 //Variables
 $gray: #F7F7F7
+$background-light: #fdfdfd
+$background-dark: #202020
 
 //Base Styles
 *
     margin: 0
-    padding: 0
+    padding: 0 
     font-size: 62.5%
     font-family: 'Montserrat', sans-serif
 
 section.whoWeAre, section.howWeDoIt
     display: flex
-    
     margin: auto
     width: 100%
     padding-top: 2rem
 
 
 body
-    background-color: white
+    background-color: $background-light
 
 
 //How Do It Mobile-First Styles
-section.howWeDoIt
-    display: flex
-    flex-direction: column
-    position: relative
-section.whoWeAre
+section.howWeDoIt, section.whoWeAre
     display: flex
     flex-direction: column
     position: relative
 
-div.whoWeAre-box-1
-    h1
-        font-color: red
-
-div.greenhouse-staff
+div.greenhouse-staff-pics
     display: flex
     flex-flow: row wrap
     justify-content: flex-start
-    img
-        width: 25%
+    max-width: 1024px
+    margin: auto
+    div.staff-pics-row
+        img
+            flex-basis: 25%       
         
-
-    
 div.box
     display: flex
     max-width: 1024px
     margin: auto
 div.box-1
     padding-bottom: 3rem
-    div.img
+    div.title-img
         flex-basis: 40%
         img
             width: 50%
@@ -59,12 +53,18 @@ div.box-1
         justify-content: flex-start
         flex-direction: column
         h1.head-txt
-            font-size: 1.7rem
+            font-size: 6rem
             font-weight: 700
+            padding-bottom: 4rem
+
     div.para
         display: flex
         flex-direction: column
         width: 90%
+        p
+            font-size: 1.75rem
+            strong
+                font-size: 1.75rem
         img
             width: 110%
 
