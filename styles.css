@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-size: 62.5%;
+  overflow-x: hidden;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -15,12 +16,8 @@ section.whoWeAre, section.howWeDoIt {
 }
 
 body {
-<<<<<<< HEAD
   background-color: white;
   color: #383838;
-=======
-  background-color: #fdfdfd;
->>>>>>> ed82b133b8636a42484bd804b6b1fa3a3921daf4
 }
 
 section.howWeDoIt, section.whoWeAre {
@@ -61,18 +58,27 @@ div.box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 90%;
+  width: 90%;
+  max-width: 1024px;
   margin: auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 3rem 0;
 }
 
-div.box-1 {
-  padding: 7% 0;
+@media screen and (min-width: 725px) {
+  div.box {
+    padding: 6rem 0;
+  }
 }
 
-<<<<<<< HEAD
+@media screen and (min-width: 1024px) {
+  div.box {
+    padding: 10rem 0;
+  }
+}
+
 div.box-1 div.section-header {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -88,6 +94,19 @@ div.box-1 div.section-header div.header-txt {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  color: black;
+}
+
+@media screen and (min-width: 725px) {
+  div.box-1 div.section-header div.header-txt {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  div.box-1 div.section-header div.header-txt {
+    font-size: 2.5rem;
+  }
 }
 
 div.box-1 div.section-header div.line {
@@ -96,25 +115,15 @@ div.box-1 div.section-header div.line {
   height: .4rem;
 }
 
+@media screen and (min-width: 1024px) {
+  div.box-1 div.section-header div.line {
+    height: .5rem;
+  }
+}
+
 div.box-1 div.info {
   -ms-flex-preferred-size: 70%;
       flex-basis: 70%;
-=======
-div.box-1 div.title-img {
-  min-width: 50%;
-  max-width: 60vw;
-}
-
-div.box-1 div.title-img img {
-  min-width: 11vw;
-  max-width: 50%;
-  padding: 0 15%;
-}
-
-div.box-1 div.info {
-  -ms-flex-preferred-size: 75%;
-      flex-basis: 75%;
->>>>>>> ed82b133b8636a42484bd804b6b1fa3a3921daf4
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -127,14 +136,29 @@ div.box-1 div.info {
           flex-direction: column;
 }
 
+@media screen and (min-width: 425px) {
+  div.box-1 div.info {
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+  }
+}
+
 div.box-1 div.info h1.head-txt {
-<<<<<<< HEAD
   font-size: 2rem;
-=======
-  font-size: 4.5vw;
->>>>>>> ed82b133b8636a42484bd804b6b1fa3a3921daf4
   font-weight: 700;
-  padding-bottom: 5%;
+  color: black;
+}
+
+@media screen and (min-width: 725px) {
+  div.box-1 div.info h1.head-txt {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  div.box-1 div.info h1.head-txt {
+    font-size: 3.5rem;
+  }
 }
 
 div.para {
@@ -143,44 +167,45 @@ div.para {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-<<<<<<< HEAD
       -ms-flex-direction: row;
           flex-direction: row;
   width: 95%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-=======
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 85%;
-  min-width: 50%;
-}
-
-div.box-1 div.para p {
-  font-size: 1.36vw;
-  line-height: 1.5;
-}
-
-div.box-1 div.para p strong {
-  font-size: 1.36vw;
->>>>>>> ed82b133b8636a42484bd804b6b1fa3a3921daf4
 }
 
 div.para p {
   font-size: .7rem;
 }
 
-div.num-para {
-  width: 100%;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+@media screen and (min-width: 725px) {
+  div.para p {
+    font-size: 1.3rem;
+  }
 }
 
-div.num-para span.num {
-  width: .7rem;
+@media screen and (min-width: 1024px) {
+  div.para p {
+    font-size: 1.7rem;
+  }
+}
+
+div.para span.num {
+  padding-right: .5rem;
   font-size: 1rem;
   font-weight: 700;
+}
+
+@media screen and (min-width: 725px) {
+  div.para span.num {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  div.para span.num {
+    font-size: 2.5rem;
+  }
 }
 
 div.bold-para {
@@ -189,7 +214,19 @@ div.bold-para {
 
 div.bold-para p {
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.3rem;
+}
+
+@media screen and (min-width: 725px) {
+  div.bold-para p {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  div.bold-para p {
+    font-size: 2rem;
+  }
 }
 
 div.wrap {
@@ -202,8 +239,7 @@ div.wrap {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 3rem;
-  margin-bottom: 4rem;
-  height: 32rem;
+  margin-bottom: 2rem;
 }
 
 div.box-2 {
@@ -212,7 +248,6 @@ div.box-2 {
 }
 
 div.box-2 div.para {
-  width: 90%;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -236,6 +271,7 @@ div.box-2 div.img-box {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  z-index: 200;
 }
 
 div.box-2 div.img-box img {
@@ -246,6 +282,43 @@ div.box-2 div.img-box img {
 }
 
 div.box-3 {
-  padding: 4rem 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+div.box-3 div.para {
+  width: 70%;
+}
+
+div.box-3 div.img-box {
+  width: 100%;
+  padding: 2rem 0;
+}
+
+div.box-3 div.img-box img {
+  width: 100%;
+}
+
+div.box-3 div.right {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+div.box-3 div.right p {
+  width: 70%;
+}
+
+div.box-4 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /*# sourceMappingURL=styles.css.map */

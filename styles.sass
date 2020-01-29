@@ -11,6 +11,7 @@ $title-font-size: 4.5vw
     margin: 0
     padding: 0 
     font-size: 62.5%
+    overflow-x: hidden
     font-family: 'Montserrat', sans-serif
 
 section.whoWeAre, section.howWeDoIt
@@ -48,11 +49,17 @@ div.greenhouse-staff-pics
          
 div.box
     display: flex
-    max-width: 90%
+    width: 90%
+    max-width: 1024px
     margin: auto
     justify-content: space-between
+    padding: 3rem 0
+    @media screen and ( min-width: 725px )
+        padding: 6rem 0
+    @media screen and ( min-width: 1024px )
+        padding: 10rem 0
+ 
 div.box-1
-    padding-bottom: 3rem
     div.section-header
         width: fit-content
         margin: 0 .2rem 
@@ -61,20 +68,33 @@ div.box-1
             font-size: 1rem
             font-weight: 700
             width: fit-content
+            color: black
+            @media screen and ( min-width: 725px )
+                font-size: 2rem
+            @media screen and ( min-width: 1024px )
+                font-size: 2.5rem
         div.line
             width: 100%
             background-color: black
             height: .4rem
-       
+            @media screen and ( min-width: 1024px )
+                height: .5rem
     div.info
         flex-basis: 70%
         display: flex
         justify-content: space-between
         flex-direction: column
+        @media screen and ( min-width: 425px )
+            flex-basis: 60%
+        
         h1.head-txt
-<<<<<<< HEAD
             font-size: 2rem
             font-weight: 700
+            color: black
+            @media screen and ( min-width: 725px )
+                font-size: 3rem
+            @media screen and ( min-width: 1024px )
+                font-size: 3.5rem
 div.para
     display: flex
     flex-direction: row
@@ -82,52 +102,42 @@ div.para
     flex-wrap: wrap
     p
         font-size: .7rem
-=======
-            font-size: $title-font-size
-            font-weight: 700
-            padding-bottom: 5%
-            
-
-    div.para
-        display: flex
-        flex-direction: column
-        width: 85%
-        min-width: 50%
-        p
-            font-size: $para-font-size
-            line-height: 1.5
-            strong
-                font-size: $para-font-size
-        img
-            width: 110%
->>>>>>> ed82b133b8636a42484bd804b6b1fa3a3921daf4
-
-div.num-para
-    width: 100%
-    align-items: baseline
+        @media screen and ( min-width: 725px )
+            font-size: 1.3rem
+        @media screen and ( min-width: 1024px )
+            font-size: 1.7rem
     span.num
-        width: .7rem
+        padding-right: .5rem
         font-size: 1rem
         font-weight: 700
+        @media screen and ( min-width: 725px )
+            font-size: 2rem
+        @media screen and ( min-width: 1024px )
+            font-size: 2.5rem
+
+   
     
 div.bold-para
     padding: .5rem 0
     p
         font-weight: 700
-        font-size: 1rem
+        font-size: 1.3rem
+        @media screen and ( min-width: 725px )
+            font-size: 1.5rem
+        @media screen and ( min-width: 1024px )
+            font-size: 2rem
 div.wrap
     background-color: $gray
     width: 100vw
     display: flex
     justify-content: center
     padding-top: 3rem
-    margin-bottom: 4rem
-    height: 32rem
+    margin-bottom: 2rem
+  
  
 div.box-2
     flex-wrap: wrap
     div.para
-        width: 90%
         margin: auto
         display: flex
         justify-content: center
@@ -137,13 +147,32 @@ div.box-2
             width: 1rem
     div.img-box
         display: flex
-        width: 100%
+        width: 100% 
+        // position: absolute
+        z-index: 200
         img
             width: 30%
             margin: 1rem
             box-shadow: 2px 4px 4px 3px darken($gray, 15% )
+           
 div.box-3
-    padding: 4rem 0
+    flex-direction: column
+    div.para
+        width: 70%
+    div.img-box
+        width: 100%
+        padding: 2rem 0
+        img
+            width: 100%
+    div.right
+        width: 100%
+        display: flex
+        justify-content: flex-end
+        p
+            width: 70%
+
+div.box-4
+    flex-direction: column
     
            
                 
