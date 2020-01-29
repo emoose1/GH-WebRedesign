@@ -1,19 +1,23 @@
 //Variables
 $gray: #F7F7F7
+$background-light: #fdfdfd
+$background-dark: #202020
+$para-font-size: 1.36vw
+$title-font-size: 4.5vw
+
 
 //Base Styles
 *
     margin: 0
-    padding: 0
+    padding: 0 
     font-size: 62.5%
     font-family: 'Montserrat', sans-serif
 
 section.whoWeAre, section.howWeDoIt
     display: flex
-    
     margin: auto
     width: 100%
-    padding-top: 2rem
+    padding-top: 1%
 
 
 body
@@ -22,15 +26,31 @@ body
 
 
 //How Do It Mobile-First Styles
-section.howWeDoIt
+section.howWeDoIt, section.whoWeAre
     display: flex
     flex-direction: column
     position: relative
-    
+
+div.greenhouse-staff-pics
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    margin: auto
+    div.staff-pics-row
+        align-content: center
+        min-width: 40%
+        img
+            max-width: 24%
+            
+            
+
+        
+         
 div.box
     display: flex
-    max-width: 1024px
+    max-width: 90%
     margin: auto
+    justify-content: space-between
 div.box-1
     padding-bottom: 3rem
     div.section-header
@@ -49,9 +69,10 @@ div.box-1
     div.info
         flex-basis: 70%
         display: flex
-        justify-content: flex-start
+        justify-content: space-between
         flex-direction: column
         h1.head-txt
+<<<<<<< HEAD
             font-size: 2rem
             font-weight: 700
 div.para
@@ -61,6 +82,25 @@ div.para
     flex-wrap: wrap
     p
         font-size: .7rem
+=======
+            font-size: $title-font-size
+            font-weight: 700
+            padding-bottom: 5%
+            
+
+    div.para
+        display: flex
+        flex-direction: column
+        width: 85%
+        min-width: 50%
+        p
+            font-size: $para-font-size
+            line-height: 1.5
+            strong
+                font-size: $para-font-size
+        img
+            width: 110%
+>>>>>>> ed82b133b8636a42484bd804b6b1fa3a3921daf4
 
 div.num-para
     width: 100%

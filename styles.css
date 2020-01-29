@@ -11,15 +11,19 @@ section.whoWeAre, section.howWeDoIt {
   display: flex;
   margin: auto;
   width: 100%;
-  padding-top: 2rem;
+  padding-top: 1%;
 }
 
 body {
+<<<<<<< HEAD
   background-color: white;
   color: #383838;
+=======
+  background-color: #fdfdfd;
+>>>>>>> ed82b133b8636a42484bd804b6b1fa3a3921daf4
 }
 
-section.howWeDoIt {
+section.howWeDoIt, section.whoWeAre {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,18 +34,45 @@ section.howWeDoIt {
   position: relative;
 }
 
+div.greenhouse-staff-pics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: auto;
+}
+
+div.greenhouse-staff-pics div.staff-pics-row {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  min-width: 40%;
+}
+
+div.greenhouse-staff-pics div.staff-pics-row img {
+  max-width: 24%;
+}
+
 div.box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 1024px;
+  max-width: 90%;
   margin: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 div.box-1 {
-  padding-bottom: 3rem;
+  padding: 7% 0;
 }
 
+<<<<<<< HEAD
 div.box-1 div.section-header {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -68,12 +99,28 @@ div.box-1 div.section-header div.line {
 div.box-1 div.info {
   -ms-flex-preferred-size: 70%;
       flex-basis: 70%;
+=======
+div.box-1 div.title-img {
+  min-width: 50%;
+  max-width: 60vw;
+}
+
+div.box-1 div.title-img img {
+  min-width: 11vw;
+  max-width: 50%;
+  padding: 0 15%;
+}
+
+div.box-1 div.info {
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+>>>>>>> ed82b133b8636a42484bd804b6b1fa3a3921daf4
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -81,8 +128,13 @@ div.box-1 div.info {
 }
 
 div.box-1 div.info h1.head-txt {
+<<<<<<< HEAD
   font-size: 2rem;
+=======
+  font-size: 4.5vw;
+>>>>>>> ed82b133b8636a42484bd804b6b1fa3a3921daf4
   font-weight: 700;
+  padding-bottom: 5%;
 }
 
 div.para {
@@ -91,11 +143,27 @@ div.para {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+<<<<<<< HEAD
       -ms-flex-direction: row;
           flex-direction: row;
   width: 95%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+=======
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 85%;
+  min-width: 50%;
+}
+
+div.box-1 div.para p {
+  font-size: 1.36vw;
+  line-height: 1.5;
+}
+
+div.box-1 div.para p strong {
+  font-size: 1.36vw;
+>>>>>>> ed82b133b8636a42484bd804b6b1fa3a3921daf4
 }
 
 div.para p {
