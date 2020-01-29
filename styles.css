@@ -33,7 +33,7 @@ body {
           align-items: center;
 }
 
-section.howWeDoIt, section.whoWeAre, section.whatsNext {
+section.howWeDoIt, section.whoWeAre, section.whatsNEXT {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,17 +59,19 @@ div.greenhouse-staff-pics {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin: auto;
 }
 
 div.greenhouse-staff-pics div.staff-pics-row {
   -ms-flex-line-pack: center;
       align-content: center;
-  min-width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1024px;
 }
 
 div.greenhouse-staff-pics div.staff-pics-row img {
-  max-width: 24%;
+  width: 25%;
 }
 
 div.box {
