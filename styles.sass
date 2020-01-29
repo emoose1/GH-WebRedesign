@@ -16,7 +16,7 @@ $title-font-size: 4.5vw
 
 section.whoWeAre, section.howWeDoIt
     display: flex
-    margin: auto
+ 
     width: 100%
     padding-top: 1%
 
@@ -24,13 +24,19 @@ section.whoWeAre, section.howWeDoIt
 body
     background-color: white
     color: darken($gray, 75% )
+    width: 100%
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
 
 
 //How Do It Mobile-First Styles
 section.howWeDoIt, section.whoWeAre, section.whatsNext
     display: flex
     flex-direction: column
-    position: relative
+    justify-content: center
+    align-items: center
 
 
 div.greenhouse-staff-pics
@@ -50,8 +56,8 @@ div.box
     display: flex
     width: 90%
     max-width: 1024px
-    margin: auto
     justify-content: space-between
+
     padding: 3rem 0
     @media screen and ( min-width: 725px )
         padding: 6rem 0
@@ -117,8 +123,7 @@ div.box-1
     div.section-header
         width: fit-content
         margin: 0 .2rem 
-        flex-basis: 30%
-      
+        flex-basis: 30%   
     div.info
         flex-basis: 70%
         display: flex
@@ -174,7 +179,10 @@ div.box-3
         justify-content: flex-end
         p
             width: 70%
-
+div.after
+    display: flex
+    justify-content: center
+    width: 100%
 div.box-4
     flex-direction: column
 // WHATS NEXT 
@@ -204,7 +212,14 @@ div.reach-out
         flex-basis: 45%
         p
             color: white
-   
+        @media screen and ( min-width: 725px )
+            font-size: 2rem
+        @media screen and ( min-width: 1024px )
+            font-size: 2rem
         span.bold
             font-weight: 700
             font-size: .7rem
+            @media screen and ( min-width: 725px )
+                font-size: 2rem
+            @media screen and ( min-width: 1024px )
+                font-size: 2rem
