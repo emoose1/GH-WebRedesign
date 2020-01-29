@@ -18,6 +18,7 @@ section.whoWeAre, section.howWeDoIt
 
 body
     background-color: white
+    color: darken($gray, 75% )
 
 
 //How Do It Mobile-First Styles
@@ -32,35 +33,77 @@ div.box
     margin: auto
 div.box-1
     padding-bottom: 3rem
-    div.img
-        flex-basis: 40%
-        img
-            width: 50%
+    div.section-header
+        width: fit-content
+        margin: 0 .2rem 
+        flex-basis: 30%
+        div.header-txt
+            font-size: 1rem
+            font-weight: 700
+            width: fit-content
+        div.line
+            width: 100%
+            background-color: black
+            height: .4rem
+       
     div.info
-        flex-basis: 60%
+        flex-basis: 70%
         display: flex
         justify-content: flex-start
         flex-direction: column
         h1.head-txt
-            font-size: 1.7rem
+            font-size: 2rem
             font-weight: 700
-    div.para
-        display: flex
-        flex-direction: column
-        width: 90%
-        img
-            width: 110%
+div.para
+    display: flex
+    flex-direction: row
+    width: 95%
+    flex-wrap: wrap
+    p
+        font-size: .7rem
 
-div.box-2
+div.num-para
+    width: 100%
+    align-items: baseline
+    span.num
+        width: .7rem
+        font-size: 1rem
+        font-weight: 700
+    
+div.bold-para
+    padding: .5rem 0
+    p
+        font-weight: 700
+        font-size: 1rem
+div.wrap
     background-color: $gray
     width: 100vw
+    display: flex
+    justify-content: center
+    padding-top: 3rem
+    margin-bottom: 4rem
+    height: 32rem
+ 
+div.box-2
+    flex-wrap: wrap
     div.para
-        width: 100%
+        width: 90%
+        margin: auto
         display: flex
         justify-content: center
-    img
-        height: 5rem
-        margin: auto
+    div.num-para
+        flex-basis: 100%
+        span.num
+            width: 1rem
+    div.img-box
+        display: flex
+        width: 100%
+        img
+            width: 30%
+            margin: 1rem
+            box-shadow: 2px 4px 4px 3px darken($gray, 15% )
+div.box-3
+    padding: 4rem 0
     
            
                 
