@@ -4,9 +4,10 @@
   font-size: 62.5%;
   overflow-x: hidden;
   font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
 }
 
-section.whoWeAre, section.howWeDoIt {
+section.whoWeAre, section.howWeDoIt, section.howWeGotHere {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,7 +34,7 @@ body {
           align-items: center;
 }
 
-section.howWeDoIt, section.whoWeAre, section.whatsNEXT {
+section.howWeDoIt, section.whoWeAre, section.whatsNEXT, section.howWeGotHere {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,9 +60,11 @@ div.greenhouse-staff-pics {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  padding-bottom: 7%;
 }
 
 div.greenhouse-staff-pics div.staff-pics-row {
+  padding-bottom: 5%;
   -ms-flex-line-pack: center;
       align-content: center;
   display: -webkit-box;
@@ -214,6 +217,40 @@ div.header-txt div.line {
   }
 }
 
+div.header-txt-alt {
+  font-size: 1rem;
+  font-weight: 700;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: white;
+  display: inline-block;
+}
+
+@media screen and (min-width: 725px) {
+  div.header-txt-alt {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  div.header-txt-alt {
+    font-size: 2.5rem;
+  }
+}
+
+div.header-txt-alt div.line-alt {
+  width: 100%;
+  background-color: white;
+  height: .4rem;
+}
+
+@media screen and (min-width: 1024px) {
+  div.header-txt-alt div.line-alt {
+    height: .5rem;
+  }
+}
+
 div.box-1 div.section-header {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -229,9 +266,9 @@ div.box-1 div.info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -261,6 +298,34 @@ div.box-1 div.info h1.head-txt {
 @media screen and (min-width: 1024px) {
   div.box-1 div.info h1.head-txt {
     font-size: 5.5rem;
+  }
+}
+
+div.box-1 div.info p {
+  line-height: 150%;
+}
+
+@media screen and (min-width: 725px) {
+  div.box-1 div.info p {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  div.box-1 div.info p {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 725px) {
+  div.box-1 div.info strong {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  div.box-1 div.info strong {
+    font-size: 2rem;
   }
 }
 
@@ -354,6 +419,153 @@ div.box-4 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+section.howWeGotHere {
+  color: white;
+  background-color: #202020;
+}
+
+section.howWeGotHere p {
+  line-height: 150%;
+}
+
+div.box-5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+div.box-5 div.section-header-alt {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 .2rem;
+}
+
+div.box-5 div.info-alt {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+@media screen and (min-width: 425px) {
+  div.box-5 div.info-alt {
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+  }
+}
+
+div.box-5 div.info-alt h1.head-txt-alt {
+  font-size: 5rem;
+  font-weight: 700;
+  padding: 5rem 0;
+  line-height: 150%;
+}
+
+@media screen and (min-width: 725px) {
+  div.box-5 div.info-alt h1.head-txt-alt {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  div.box-5 div.info-alt h1.head-txt-alt {
+    font-size: 8.5rem;
+  }
+}
+
+div.box-5 div.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60%;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 1rem;
+}
+
+div.box-5 div.row div.column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+}
+
+div.box-5 div.row div.column div.para p {
+  margin: 1rem 0;
+}
+
+@media screen and (min-width: 725px) {
+  div.box-5 div.row div.column div.para {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  div.box-5 div.row div.column div.para {
+    font-size: 1.5rem;
+  }
+}
+
+div.box-5 div.row div.column div.para img {
+  height: 33%;
+  width: 100%;
+}
+
+div.box-5 div.row div.column div.para span.bold {
+  margin: 2rem 0;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 725px) {
+  div.box-5 div.row div.column div.para span.bold {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  div.box-5 div.row div.column div.para span.bold {
+    font-size: 1.5rem;
+  }
+}
+
+div.box-5 div.row div.column div.img-box img {
+  width: 100%;
+  margin: .5rem 0;
+}
+
+@media screen and (min-width: 725px) {
+  div.box-5 div.row div.column div.img-box img {
+    height: 80%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  div.box-5 div.row div.column div.img-box img {
+    height: 95%;
+  }
 }
 
 section.whatsNEXT div.wrap {

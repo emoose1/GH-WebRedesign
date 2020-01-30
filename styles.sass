@@ -13,10 +13,10 @@ $title-font-size: 4.5vw
     font-size: 62.5%
     overflow-x: hidden
     font-family: 'Montserrat', sans-serif
+    font-weight: 300
 
-section.whoWeAre, section.howWeDoIt
+section.whoWeAre, section.howWeDoIt, section.howWeGotHere
     display: flex
- 
     width: 100%
     padding-top: 1%
 
@@ -30,9 +30,8 @@ body
     flex-direction: column
     align-items: center
 
-
 //How Do It Mobile-First Styles
-section.howWeDoIt, section.whoWeAre, section.whatsNEXT
+section.howWeDoIt, section.whoWeAre, section.whatsNEXT, section.howWeGotHere
     display: flex
     flex-direction: column
     justify-content: center
@@ -43,7 +42,9 @@ div.greenhouse-staff-pics
     display: flex
     flex-direction: column
     justify-content: space-around
+    padding-bottom: 7%
     div.staff-pics-row
+        padding-bottom: 5%
         align-content: center
         display: flex
         max-width: 1024px
@@ -118,6 +119,23 @@ div.header-txt
         height: .4rem
         @media screen and ( min-width: 1024px )
             height: .5rem
+div.header-txt-alt
+    font-size: 1rem
+    font-weight: 700
+    width: fit-content
+    color: white
+    display: inline-block
+    @media screen and ( min-width: 725px )
+        font-size: 2rem
+    @media screen and ( min-width: 1024px )
+        font-size: 2.5rem
+    div.line-alt
+        width: 100%
+        background-color: white
+        height: .4rem
+        @media screen and ( min-width: 1024px )
+            height: .5rem
+
 // Specific Box Styles
 div.box-1
     div.section-header
@@ -127,7 +145,7 @@ div.box-1
     div.info
         flex-basis: 70%
         display: flex
-        justify-content: space-between
+        justify-content: flex-start
         flex-direction: column
         @media screen and ( min-width: 425px )
             flex-basis: 60%
@@ -140,14 +158,24 @@ div.box-1
                 font-size: 4.5rem
             @media screen and ( min-width: 1024px )
                 font-size: 5.5rem
+        p
+            line-height: 150%
+            @media screen and ( min-width: 725px )
+                font-size: 2rem
+            @media screen and ( min-width: 1024px )
+                font-size: 2rem
+        strong  
+            @media screen and ( min-width: 725px )
+                font-size: 2rem
+            @media screen and ( min-width: 1024px )
+                font-size: 2rem
 
   
  
 div.box-2
     flex-wrap: wrap
     justify-content: center
-    div.para
-        
+    div.para     
         display: flex
         justify-content: center
     div.num-para
@@ -185,6 +213,82 @@ div.after
     width: 100%
 div.box-4
     flex-direction: column
+
+//HOW WE GOT HERE SECTION
+
+section.howWeGotHere
+    color: white
+    background-color: $background-dark
+    p
+        line-height: 150%
+div.box-5
+    display: flex
+    flex-direction: column
+    div.section-header-alt
+        width: fit-content
+        margin: 0 .2rem    
+    div.info-alt
+        flex-basis: 100%
+        display: flex
+        flex-flow: row wrap
+        @media screen and ( min-width: 425px )
+            flex-basis: 70%
+        h1.head-txt-alt
+            font-size: 5rem
+            font-weight: 700
+            padding: 5rem 0
+            line-height: 150%
+            @media screen and ( min-width: 725px )
+                font-size: 6rem
+            @media screen and ( min-width: 1024px )
+                font-size: 8.5rem   
+    div.row
+        display: flex
+        height: 60%
+        width: 100%
+        flex-flow: row wrap
+        justify-content: center
+        padding-bottom: 1rem
+        div.column
+            display: flex
+            flex-direction: column
+            flex-basis: 33%
+            div.para
+                p
+                    margin: 1rem 0
+                @media screen and ( min-width: 725px )
+                    font-size: 1.5rem
+                @media screen and ( min-width: 1024px )
+                    font-size: 1.5rem 
+                img
+                    height: 33%
+                    width: 100%
+                span.bold
+                    margin: 2rem 0
+                    font-weight: 700
+                    @media screen and ( min-width: 725px )
+                        font-size: 1.5rem
+                    @media screen and ( min-width: 1024px )
+                        font-size: 1.5rem   
+                    
+            div.img-box
+                
+                img
+                    width: 100%
+                    margin: .5rem 0
+                    @media screen and ( min-width: 725px )
+                        height: 80%
+                    @media screen and ( min-width: 1024px )
+                        height: 95%
+                
+        
+                
+                    
+            
+                
+
+
+        
 // WHATS NEXT 
 
 section.whatsNEXT
@@ -223,3 +327,4 @@ div.reach-out
                 font-size: 2rem
             @media screen and ( min-width: 1024px )
                 font-size: 2rem
+
