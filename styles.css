@@ -317,14 +317,18 @@ div.box-1 div.info p {
   }
 }
 
+div.box-1 div.info p span.bold {
+  font-weight: 700;
+}
+
 @media screen and (min-width: 725px) {
-  div.box-1 div.info strong {
+  div.box-1 div.info p span.bold {
     font-size: 2rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  div.box-1 div.info strong {
+  div.box-1 div.info p span.bold {
     font-size: 2rem;
   }
 }
