@@ -67,6 +67,7 @@ div.greenhouse-staff-pics div.staff-pics-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   max-width: 1024px;
 }
 
@@ -177,7 +178,6 @@ div.wrap {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 3rem;
-  margin-bottom: 2rem;
 }
 
 div.header-txt {
@@ -303,6 +303,13 @@ div.box-2 div.img-box img {
   margin: 1rem;
   -webkit-box-shadow: 2px 4px 4px 3px #d1d1d1;
           box-shadow: 2px 4px 4px 3px #d1d1d1;
+}
+
+@media screen and (min-width: 725px) {
+  div.box-2 div.img-box img {
+    -webkit-box-shadow: 2px 4px 6px 3px #d1d1d1;
+            box-shadow: 2px 4px 6px 3px #d1d1d1;
+  }
 }
 
 div.box-3 {
