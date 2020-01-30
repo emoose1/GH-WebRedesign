@@ -47,9 +47,11 @@ div.greenhouse-staff-pics
         padding-bottom: 5%
         align-content: center
         display: flex
+        width: 100%
         max-width: 1024px
         img
             width: 25%
+            // flex-basis: 25%
 
 // HOW WE DO IT STYLES
 // Base Box Styles       
@@ -102,7 +104,6 @@ div.wrap
     display: flex
     justify-content: center
     padding-top: 3rem
-    margin-bottom: 2rem
 div.header-txt
     font-size: 1rem
     font-weight: 700
@@ -191,6 +192,8 @@ div.box-2
             width: 30%
             margin: 1rem
             box-shadow: 2px 4px 4px 3px darken($gray, 15% )
+            @media screen and ( min-width: 725px )
+                box-shadow: 2px 4px 6px 3px darken($gray, 15% )
            
 div.box-3
     flex-direction: column
@@ -282,15 +285,7 @@ div.box-5
                         height: 95%
                 
         
-                
-                    
-            
-                
-
-
-        
 // WHATS NEXT 
-
 section.whatsNEXT
     div.wrap
         background-color: $background-dark 
