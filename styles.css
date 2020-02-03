@@ -7,14 +7,6 @@
   font-weight: 300;
 }
 
-section.whoWeAre, section.howWeDoIt, section.howWeGotHere {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  padding-top: 1%;
-}
-
 body {
   background-color: white;
   color: #383838;
@@ -34,7 +26,7 @@ body {
           align-items: center;
 }
 
-section.howWeDoIt, section.whoWeAre, section.whatsNEXT, section.howWeGotHere {
+section.howWeDoIt, section.whoWeAre, section.whatsNEXT, section.howWeGotHere, section.noteworthyAchievements {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -48,34 +40,6 @@ section.howWeDoIt, section.whoWeAre, section.whatsNEXT, section.howWeGotHere {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-div.greenhouse-staff-pics {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding-bottom: 7%;
-}
-
-div.greenhouse-staff-pics div.staff-pics-row {
-  padding-bottom: 5%;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  max-width: 1024px;
-}
-
-div.greenhouse-staff-pics div.staff-pics-row img {
-  width: 25%;
 }
 
 div.box {
@@ -432,15 +396,6 @@ div.box-4 {
           flex-direction: column;
 }
 
-section.howWeGotHere {
-  color: white;
-  background-color: #202020;
-}
-
-section.howWeGotHere p {
-  line-height: 150%;
-}
-
 div.box-5 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -451,14 +406,18 @@ div.box-5 {
           flex-direction: column;
 }
 
-div.box-5 div.section-header-alt {
+div.box-5 p {
+  line-height: 150%;
+}
+
+div.box-5 div.section-header {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 .2rem;
 }
 
-div.box-5 div.info-alt {
+div.box-5 div.section-title {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   display: -webkit-box;
@@ -468,35 +427,113 @@ div.box-5 div.info-alt {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
+  font-size: 6rem;
 }
 
 @media screen and (min-width: 425px) {
-  div.box-5 div.info-alt {
+  div.box-5 div.section-title {
     -ms-flex-preferred-size: 70%;
         flex-basis: 70%;
   }
 }
 
-div.box-5 div.info-alt h1.head-txt-alt {
-  font-size: 5rem;
+@media screen and (min-width: 725px) {
+  div.box-5 div.section-title {
+    font-size: 9rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  div.box-5 div.section-title {
+    font-size: 12rem;
+  }
+}
+
+div.box-5 div.section-title h1.title-txt {
+  padding: 5rem 0;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+div.box-5 div.section-header-alt {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 .2rem;
+}
+
+div.box-5 div.section-title-alt {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  font-size: 6rem;
+}
+
+@media screen and (min-width: 425px) {
+  div.box-5 div.section-title-alt {
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+  }
+}
+
+@media screen and (min-width: 725px) {
+  div.box-5 div.section-title-alt {
+    font-size: 9rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  div.box-5 div.section-title-alt {
+    font-size: 12rem;
+  }
+}
+
+div.box-5 div.section-title-alt h1.title-txt-alt {
   font-weight: 700;
   padding: 5rem 0;
   line-height: 150%;
 }
 
-@media screen and (min-width: 725px) {
-  div.box-5 div.info-alt h1.head-txt-alt {
-    font-size: 6rem;
-  }
+section.whoWeAre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-bottom: 7%;
 }
 
-@media screen and (min-width: 1024px) {
-  div.box-5 div.info-alt h1.head-txt-alt {
-    font-size: 8.5rem;
-  }
+section.whoWeAre div.staff-pics-row {
+  padding-bottom: 5%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 1024px;
 }
 
-div.box-5 div.row {
+section.whoWeAre div.staff-pics-row img {
+  width: 25%;
+}
+
+section.howWeGotHere {
+  color: white;
+  background-color: #202020;
+}
+
+section.howWeGotHere div.row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -512,7 +549,7 @@ div.box-5 div.row {
   padding-bottom: 1rem;
 }
 
-div.box-5 div.row div.column {
+section.howWeGotHere div.row div.column {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -524,59 +561,84 @@ div.box-5 div.row div.column {
       flex-basis: 33%;
 }
 
-div.box-5 div.row div.column div.para p {
+section.howWeGotHere div.row div.column div.para p {
   margin: 1rem 0;
 }
 
 @media screen and (min-width: 725px) {
-  div.box-5 div.row div.column div.para {
+  section.howWeGotHere div.row div.column div.para {
     font-size: 1.5rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  div.box-5 div.row div.column div.para {
+  section.howWeGotHere div.row div.column div.para {
     font-size: 1.5rem;
   }
 }
 
-div.box-5 div.row div.column div.para img {
+section.howWeGotHere div.row div.column div.para img {
   height: 33%;
   width: 100%;
 }
 
-div.box-5 div.row div.column div.para span.bold {
+section.howWeGotHere div.row div.column div.para span.bold {
   margin: 2rem 0;
   font-weight: 700;
 }
 
 @media screen and (min-width: 725px) {
-  div.box-5 div.row div.column div.para span.bold {
+  section.howWeGotHere div.row div.column div.para span.bold {
     font-size: 1.5rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  div.box-5 div.row div.column div.para span.bold {
+  section.howWeGotHere div.row div.column div.para span.bold {
     font-size: 1.5rem;
   }
 }
 
-div.box-5 div.row div.column div.img-box img {
+section.howWeGotHere div.row div.column div.img-box img {
   width: 100%;
   margin: .5rem 0;
 }
 
 @media screen and (min-width: 725px) {
-  div.box-5 div.row div.column div.img-box img {
+  section.howWeGotHere div.row div.column div.img-box img {
     height: 81%;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  div.box-5 div.row div.column div.img-box img {
+  section.howWeGotHere div.row div.column div.img-box img {
     height: 95%;
   }
+}
+
+section.noteworthyAchievements {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.noteworthyAchievements div.section-title h1.title-txt {
+  padding: 1rem 0;
+  font-size: 45%;
+}
+
+section.noteworthyAchievements div.img-box {
+  width: 100%;
+  padding: 1rem 0;
+}
+
+section.noteworthyAchievements div.img-box img {
+  width: 100%;
+}
+
+section.whatWeDo {
+  color: white;
+  background-color: #202020;
 }
 
 section.whatsNEXT div.wrap {

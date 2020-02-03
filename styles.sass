@@ -2,9 +2,6 @@
 $gray: #F7F7F7
 $background-light: #fdfdfd
 $background-dark: #202020
-$para-font-size: 1.36vw
-$title-font-size: 4.5vw
-
 
 //Base Styles
 *
@@ -14,12 +11,6 @@ $title-font-size: 4.5vw
     overflow-x: hidden
     font-family: 'Montserrat', sans-serif
     font-weight: 300
-
-section.whoWeAre, section.howWeDoIt, section.howWeGotHere
-    display: flex
-    width: 100%
-    padding-top: 1%
-
 
 body
     background-color: white
@@ -31,29 +22,14 @@ body
     align-items: center
 
 //How Do It Mobile-First Styles
-section.howWeDoIt, section.whoWeAre, section.whatsNEXT, section.howWeGotHere
+section.howWeDoIt, section.whoWeAre, section.whatsNEXT, section.howWeGotHere, section.noteworthyAchievements
     display: flex
     flex-direction: column
     justify-content: center
     align-items: center
 
-
-div.greenhouse-staff-pics
-    display: flex
-    flex-direction: column
-    justify-content: space-around
-    padding-bottom: 7%
-    div.staff-pics-row
-        padding-bottom: 5%
-        align-content: center
-        display: flex
-        width: 100%
-        max-width: 1024px
-        img
-            width: 25%
-            // flex-basis: 25%
-
 // HOW WE DO IT STYLES
+
 // Base Box Styles       
 div.box
     display: flex
@@ -85,10 +61,7 @@ div.para
         @media screen and ( min-width: 725px )
             font-size: 2rem
         @media screen and ( min-width: 1024px )
-            font-size: 2.5rem
-
-   
-    
+            font-size: 2.5rem    
 div.bold-para
     padding-bottom: 2rem
     p
@@ -171,9 +144,6 @@ div.box-1
                     font-size: 2rem
                 @media screen and ( min-width: 1024px )
                     font-size: 2rem
-
-  
- 
 div.box-2
     flex-wrap: wrap
     justify-content: center
@@ -194,8 +164,7 @@ div.box-2
             margin: 1rem
             box-shadow: 2px 4px 4px 3px darken($gray, 15% )
             @media screen and ( min-width: 725px )
-                box-shadow: 2px 4px 6px 3px darken($gray, 15% )
-           
+                box-shadow: 2px 4px 6px 3px darken($gray, 15% )         
 div.box-3
     flex-direction: column
     div.para
@@ -217,35 +186,70 @@ div.after
     width: 100%
 div.box-4
     flex-direction: column
-
-//HOW WE GOT HERE SECTION
-
-section.howWeGotHere
-    color: white
-    background-color: $background-dark
-    p
-        line-height: 150%
 div.box-5
     display: flex
     flex-direction: column
-    div.section-header-alt
+    p
+        line-height: 150%
+    div.section-header
         width: fit-content
-        margin: 0 .2rem    
-    div.info-alt
+        margin: 0 .2rem
+    div.section-title
         flex-basis: 100%
         display: flex
         flex-flow: row wrap
+        font-size: 6rem
+        @media screen and ( min-width: 425px )
+            flex-basis: 70%            
+        @media screen and ( min-width: 725px )
+            font-size: 9rem
+        @media screen and ( min-width: 1024px )
+            font-size: 12rem
+        h1.title-txt
+            padding: 5rem 0
+            font-weight: 700
+            line-height: 150%
+    div.section-header-alt
+        width: fit-content
+        margin: 0 .2rem    
+    div.section-title-alt
+        flex-basis: 100%
+        display: flex
+        flex-flow: row wrap
+        font-size: 6rem
         @media screen and ( min-width: 425px )
             flex-basis: 70%
-        h1.head-txt-alt
-            font-size: 5rem
+        @media screen and ( min-width: 725px )
+            font-size: 9rem
+        @media screen and ( min-width: 1024px )
+            font-size: 12rem
+        h1.title-txt-alt
             font-weight: 700
             padding: 5rem 0
             line-height: 150%
-            @media screen and ( min-width: 725px )
-                font-size: 6rem
-            @media screen and ( min-width: 1024px )
-                font-size: 8.5rem   
+                       
+//WHO WE ARE SECTION
+section.whoWeAre
+    div.greenhouse-staff-pics
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    padding-bottom: 7%
+    div.staff-pics-row
+        padding-bottom: 5%
+        align-content: center
+        display: flex
+        width: 100%
+        max-width: 1024px
+        img
+            width: 25%
+            // flex-basis: 25%
+
+
+//HOW WE GOT HERE SECTION
+section.howWeGotHere
+    color: white
+    background-color: $background-dark
     div.row
         display: flex
         height: 60%
@@ -283,9 +287,26 @@ div.box-5
                         height: 81%
                     @media screen and ( min-width: 1024px )
                         height: 95%
-                
-        
-// WHATS NEXT 
+
+//NOTEWORTHY ACHIEVEMENTS SECTION
+section.noteworthyAchievements
+    justify-content: center
+    div.section-title
+        h1.title-txt
+            padding: 1rem 0
+            font-size: 45%
+    div.img-box
+        width: 100%
+        padding: 1rem 0
+        img
+            width: 100%                
+     
+//WHAT WE DO SECTION
+section.whatWeDo
+    color: white
+    background-color: $background-dark
+      
+// WHATS NEXT SECTION
 section.whatsNEXT
     div.wrap
         background-color: $background-dark 
