@@ -26,7 +26,7 @@ body {
           align-items: center;
 }
 
-section.howWeDoIt, section.whoWeAre, section.whatsNEXT, section.howWeGotHere, section.noteworthyAchievements {
+section.howWeDoIt, section.whoWeAre, section.whatsNEXT, section.howWeGotHere, section.noteworthyAchievements, section.whatWeDo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -530,7 +530,8 @@ section.whoWeAre div.staff-pics-row img {
 
 section.howWeGotHere {
   color: white;
-  background-color: #202020;
+  background-color: #1F2220;
+  width: 100vw;
 }
 
 section.howWeGotHere div.row {
@@ -623,8 +624,9 @@ section.noteworthyAchievements {
 }
 
 section.noteworthyAchievements div.section-title h1.title-txt {
-  padding: 1rem 0;
-  font-size: 45%;
+  padding: 7rem 0;
+  font-size: 55%;
+  line-height: 1.25;
 }
 
 section.noteworthyAchievements div.img-box {
@@ -638,11 +640,150 @@ section.noteworthyAchievements div.img-box img {
 
 section.whatWeDo {
   color: white;
-  background-color: #202020;
+  background-color: #1F2220;
+  width: 100vw;
+}
+
+section.whatWeDo div.section-title-alt h1.title-txt-alt {
+  padding: 1rem 0;
+  font-size: 45%;
+}
+
+section.whatWeDo div.whatWeDo-box1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.whatWeDo div.whatWeDo-box1 div.img-box {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3rem 0;
+}
+
+section.whatWeDo div.whatWeDo-box1 div.img-box img {
+  width: 90%;
+}
+
+section.whatWeDo div.whatWeDo-box1 div.para {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+}
+
+section.whatWeDo div.whatWeDo-box1 div.para p {
+  margin: 1rem 0;
+}
+
+@media screen and (min-width: 725px) {
+  section.whatWeDo div.whatWeDo-box1 div.para {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  section.whatWeDo div.whatWeDo-box1 div.para {
+    font-size: 2rem;
+  }
+}
+
+section.whatWeDo div.whatWeDo-box1 div.para span.bold {
+  margin: 2rem 0;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 725px) {
+  section.whatWeDo div.whatWeDo-box1 div.para span.bold {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  section.whatWeDo div.whatWeDo-box1 div.para span.bold {
+    font-size: 1.7rem;
+  }
+}
+
+section.whatWeDo div.whatWeDo-box2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 3rem 0;
+}
+
+section.whatWeDo div.whatWeDo-box2 div.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5rem 0;
+}
+
+section.whatWeDo div.whatWeDo-box2 div.row div.img-box {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+
+section.whatWeDo div.whatWeDo-box2 div.row div.img-box img {
+  max-width: 35%;
+}
+
+section.whatWeDo div.whatWeDo-box2 div.row div.para {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+
+section.whatWeDo div.whatWeDo-box2 div.row div.para h1.head-txt {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+section.whatWeDo div.whatWeDo-box2 div.row div.para p {
+  margin: 1rem 0;
+}
+
+@media screen and (min-width: 725px) {
+  section.whatWeDo div.whatWeDo-box2 div.row div.para {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  section.whatWeDo div.whatWeDo-box2 div.row div.para {
+    font-size: 2rem;
+  }
+}
+
+section.whatWeDo div.whatWeDo-box2 div.row div.para span.bold {
+  margin: 2rem 0;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 725px) {
+  section.whatWeDo div.whatWeDo-box2 div.row div.para span.bold {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  section.whatWeDo div.whatWeDo-box2 div.row div.para span.bold {
+    font-size: 1.7rem;
+  }
 }
 
 section.whatsNEXT div.wrap {
-  background-color: #202020;
+  background-color: #1F2220;
 }
 
 div.reach-out {
@@ -689,13 +830,13 @@ div.reach-out div.para p {
 
 @media screen and (min-width: 725px) {
   div.reach-out div.para {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
   div.reach-out div.para {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 
